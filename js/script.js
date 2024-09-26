@@ -8,50 +8,24 @@ function replaceName() {
 }
 
 // Ganti Nama
-// document.getElementById("tombol").addEventListener("click", function () {
-//   replaceName();
-// });
+document.getElementById("tombol").addEventListener("click", function () {
+  replaceName();
+});
 
-// Result Form
-// let nameInput = document.getElementById("name-input");
-
-// document.getElementById("kirim").addEventListener("click", function () {
-//   const nama = nameInput.value;
-// });
-
-// Validation Form
 function validateForm() {
-  let inputName = document.getElementById("name-input").value;
-  if (inputName == "") {
-    alert("Data tidak boleh kosong");
+  const name = document.forms["message-form"]["full-name"].value;
+  const birthDate = document.forms["message-form"]["birth-date"].value;
+  const gender = document.forms["message-form"]["gender"].value;
+  const messages = document.forms["message-form"]["messages"].value;
+
+  if (name == "" || birthDate == "" || gender == "" || messages == "") {
+    alert("Tidak boleh ada yang kosong");
+    return false;
   } else {
-    document.getElementById("result-form").innerHTML = inputName;
+    document.getElementById("result-form").innerHTML = name;
+    document.getElementById("result-form").innerHTML = birthDate;
+    document.getElementById("result-form").innerHTML = gender;
+    document.getElementById("result-form").innerHTML = messages;
     alert("Sukses Submit Form");
   }
 }
-
-function validateForm() {
-  let inputName = document.getElementById("date-input").value;
-  if (inputName == "") {
-    alert("Data tidak boleh kosong");
-  } else {
-    document.getElementById("result-form").innerHTML = inputName;
-    alert("Sukses Submit Form");
-  }
-}
-
-// // photo banner
-// function showSlide() {
-//   let listImage = document.getElementsByClassName("photo-banner");
-
-//   // hide all image
-//   let i = 0;
-//   while (i < listImage.length) {
-//     listImage[i].style.display = "none";
-//     i++;
-//   }
-
-//   listImage[0].style.display = "block";
-
-//   console.log(listImage);
-// }

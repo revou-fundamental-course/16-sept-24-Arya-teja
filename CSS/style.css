@@ -107,7 +107,7 @@
 
 /* Home*/
 .home {
-  margin-top: 4%;
+  margin-top: 6%;
   font-family: "Nerko One", cursive;
   font-weight: 400;
   font-style: normal;
@@ -125,15 +125,6 @@
   background-position: center;
 }
 
-/* .logo-1 {
-  background-image: url(https://picsum.photos/id/237/200/300);
-}
-.logo-2 {
-  background-image: url(https://picsum.photos/200/300?grayscale);
-}
-.logo-3 {
-  background-image: url(https://picsum.photos/200);
-} */
 /* My car */
 .mycar {
   font-family: "Nerko One", cursive;
@@ -152,7 +143,8 @@
 
 .profile-icon {
   height: 550px;
-  width: 500px;
+  width: 450px;
+  margin: 0px 2%;
   background-image: url(../assets/michael-alake-puYssjjSpnE-unsplash.jpg);
   background-size: cover;
   background-position: center;
@@ -161,7 +153,8 @@
 
 .profile-icon1 {
   height: 550px;
-  width: 500px;
+  width: 450px;
+  margin: 0px 2%;
   background-image: url(../assets/enzo-swan-QwmJEtK7sEk-unsplash.jpg);
   background-size: cover;
   background-position: center;
@@ -170,7 +163,8 @@
 
 .profile-icon2 {
   height: 550px;
-  width: 500px;
+  width: 450px;
+  margin: 0px 2%;
   background-image: url(../assets/enzo-swan-wDn8sn6jwmA-unsplash.jpg);
   background-size: cover;
   background-position: center;
@@ -178,16 +172,11 @@
 }
 
 /* message us */
-/* .message-us {
-} */
+
 .font-form {
   font-size: 20px;
   margin-left: 18%;
 }
-/* .form-container {
-  display: flex;
-  justify-content: center;
-} */
 
 .name-input {
   width: 60%;
@@ -200,6 +189,13 @@
 }
 
 .pesan {
+  width: 60%;
+  padding: 10px;
+  padding-bottom: 110px;
+  margin-left: 18%;
+}
+
+.form-result {
   width: 60%;
   padding: 10px;
   padding-bottom: 110px;

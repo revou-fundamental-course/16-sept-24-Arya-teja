@@ -37,17 +37,11 @@
           <h1>
             Hi <span id="name">Arya</span>, Welcome to <span>577</span>GARAGE
           </h1>
-          <!-- <button id="tombol">Ganti Nama</button> -->
-          <script src="js/script.js"></script>
+          <button id="tombol">Ganti Nama</button>
         </header>
 
         <!-- photo banner -->
         <div class="photo-banner"></div>
-        <!-- <div class="photo-banner logo-1"></div>
-          <div class="photo-banner logo-2"></div>
-          <div class="photo-banner logo-3"></div> -->
-
-        <script src="js/script.js"></script>
       </section>
 
       <hr />
@@ -95,7 +89,7 @@
               type="text"
               placeholder="Nama Lengkap"
               id="name-input"
-              name="name-input"
+              name="full-name"
               class="name-input"
             />
 
@@ -103,8 +97,8 @@
             <input
               type="date"
               class="name-input"
-              id="date-input"
-              name="name-input"
+              id="sender-birth-date"
+              name="birth-date"
             />
 
             <p class="font-form">Jenis Kelamin :</p>
@@ -112,16 +106,16 @@
               <input
                 type="text"
                 placeholder="Jenis Kelamin"
-                id="name-input"
-                name="name-input"
+                id="sender-gender"
+                name="gender"
                 class="name-input"
               />
             </p>
 
             <p class="font-form">Pesan :</p>
             <textarea
-              name="message"
-              id="name-input"
+              name="messages"
+              id="sender-messages"
               placeholder="Pesan"
               class="pesan"
             ></textarea>
@@ -133,8 +127,13 @@
 
           <!-- Result Form -->
           <div>
-            <p>Result Form : <span id="result-form"></span></p>
+            <p class="font-form">
+              Result Form : <span id="result-form"></span>
+            </p>
+            <textarea name="" id="" class="form-result"></textarea>
           </div>
+
+          <script src="js/script.js"></script>
         </section>
       </section>
     </main>
