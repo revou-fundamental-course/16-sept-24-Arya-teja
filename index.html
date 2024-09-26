@@ -4,36 +4,143 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mini Project</title>
+    <!-- css -->
     <link rel="stylesheet" href="CSS/style.css" />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header class="main-header">
       <!-- Logo -->
-      <div class="logo-icon"></div>
-
+      <div class="logo-container">
+        <div class="logo-icon"></div>
+        <div class="logo-tulisan"><span>577</span>GARAGE</div>
+      </div>
       <!-- Navigation -->
       <nav class="navbar">
-        <a href="#">Home</a>
-        <a href="#">Profile</a>
-        <a href="#">Portofolio</a>
-        <a href="#">Message Us</a>
+        <a href="#section-home">Home</a>
+        <a href="#sectionmycar">My Car</a>
+        <a href="#section-portofolio">Portofolio</a>
+        <a href="#section-message-us">Message Us</a>
       </nav>
     </header>
 
     <main>
       <!-- Home -->
-      <section></section>
+      <section id="section-home" class="home">
+        <header>
+          <h1>
+            Hi <span id="name">Arya</span>, Welcome to <span>577</span>GARAGE
+          </h1>
+          <!-- <button id="tombol">Ganti Nama</button> -->
+          <script src="js/script.js"></script>
+        </header>
 
-      <!-- Our Profile -->
-      <section></section>
+        <!-- photo banner -->
+        <div class="photo-banner"></div>
+        <!-- <div class="photo-banner logo-1"></div>
+          <div class="photo-banner logo-2"></div>
+          <div class="photo-banner logo-3"></div> -->
 
-      <!-- Portofolio -->
-      <section></section>
+        <script src="js/script.js"></script>
+      </section>
+
+      <hr />
+
+      <!-- Mycar -->
+      <section id="#sectionmycar" class="mycar">
+        <header>
+          <h1>My Car</h1>
+        </header>
+
+        <div class="profile-icon-container">
+          <!-- Logo 1 -->
+          <div class="logo">
+            <div class="profile-icon"></div>
+            <h4>Porche 911</h4>
+          </div>
+
+          <!-- Logo 2 -->
+          <div class="logo">
+            <div class="profile-icon1"></div>
+            <h4>Ferarri 812 Competizione</h4>
+          </div>
+
+          <!-- Logo 3 -->
+          <div class="logo">
+            <div class="profile-icon2"></div>
+            <h4>Ferarri SF90 Stradale</h4>
+          </div>
+        </div>
+      </section>
+
+      <hr />
 
       <!-- Messege Us -->
-      <section></section>
+      <section id="section-message-us" class="message-us">
+        <header>
+          <h1>Message us</h1>
+        </header>
+
+        <!-- Form -->
+        <section class="form-container">
+          <form name="message-form" onsubmit="return false" class="form">
+            <p class="font-form">Nama :</p>
+            <input
+              type="text"
+              placeholder="Nama Lengkap"
+              id="name-input"
+              name="name-input"
+              class="name-input"
+            />
+
+            <p class="font-form">Tanggal Lahir :</p>
+            <input
+              type="date"
+              class="name-input"
+              id="date-input"
+              name="name-input"
+            />
+
+            <p class="font-form">Jenis Kelamin :</p>
+            <p>
+              <input
+                type="text"
+                placeholder="Jenis Kelamin"
+                id="name-input"
+                name="name-input"
+                class="name-input"
+              />
+            </p>
+
+            <p class="font-form">Pesan :</p>
+            <textarea
+              name="message"
+              id="name-input"
+              placeholder="Pesan"
+              class="pesan"
+            ></textarea>
+
+            <button onclick="validateForm()" type="submit" class="button">
+              Submit
+            </button>
+          </form>
+
+          <!-- Result Form -->
+          <div>
+            <p>Result Form : <span id="result-form"></span></p>
+          </div>
+        </section>
+      </section>
     </main>
 
-    <footer></footer>
+    <footer>
+      <p>Made by Arya</p>
+    </footer>
   </body>
 </html>

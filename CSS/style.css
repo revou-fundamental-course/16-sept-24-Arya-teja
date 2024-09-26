@@ -1,18 +1,207 @@
+* {
+  background-color: gray;
+}
+
+/* Navigatiom */
+
 .main-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 5px 4%;
+  border-bottom: 1px solid #e8b86d;
+  position: fixed;
+  right: 0;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  background-color: #181c14;
 }
 
+.logo-container {
+  display: flex;
+  align-items: center;
+  background-color: #181c14;
+}
 .logo-icon {
   height: 50px;
   width: 50px;
-  background-image: url(https://picsum.photos/seed/picsum/200/300);
+  background-image: url(../assets/patrick-fore-u0dEeOeYC20-unsplash.jpg);
   background-size: cover;
   background-position: center;
   border-radius: 50%;
 }
 
+.logo-tulisan {
+  font-family: "Nerko One", cursive;
+  font-weight: 400;
+  font-style: normal;
+  margin-left: 20px;
+  font-size: 30px;
+  color: #ecdfcc;
+  background-color: #181c14;
+}
+
+.logo-tulisan span {
+  color: #e8b86d;
+  background-color: #181c14;
+}
+
 .navbar {
   display: flex;
+  background-color: #181c14;
+}
+
+.navbar a {
+  font-family: "Nerko One", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+  text-decoration: none;
+  outline: none;
+  margin-left: 30px;
+  color: #697565;
+  background-color: #181c14;
+}
+
+.navbar a:hover {
+  color: #e8b86d;
+}
+
+.navbar a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid #e8b86d;
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+
+.navbar a:hover::after {
+  transform: scaleX(0.7);
+}
+
+@media only screen and (max-width: 600px) {
+  .main-header {
+    flex-direction: column;
+    background-color: rgb(219, 108, 4);
+  }
+  .navbar a {
+    margin: 0;
+    padding: 5px;
+    border: 1px solid;
+  }
+  .navbar {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .logo-icon {
+    margin-bottom: 15px;
+  }
+
+  .home {
+    padding-top: 44%;
+  }
+}
+
+/* Home*/
+.home {
+  margin-top: 4%;
+  font-family: "Nerko One", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+}
+
+.home span {
+  color: #e8b86d;
+}
+.photo-banner {
+  height: 480px;
+  background-image: url(../assets/egor-vikhrev-S0cqn0mZU0E-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* .logo-1 {
+  background-image: url(https://picsum.photos/id/237/200/300);
+}
+.logo-2 {
+  background-image: url(https://picsum.photos/200/300?grayscale);
+}
+.logo-3 {
+  background-image: url(https://picsum.photos/200);
+} */
+/* My car */
+.mycar {
+  font-family: "Nerko One", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+}
+.profile-icon-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.profile-icon-container .logo {
+  align-items: center;
+}
+
+.profile-icon {
+  height: 550px;
+  width: 500px;
+  background-image: url(../assets/michael-alake-puYssjjSpnE-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+}
+
+.profile-icon1 {
+  height: 550px;
+  width: 500px;
+  background-image: url(../assets/enzo-swan-QwmJEtK7sEk-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+}
+
+.profile-icon2 {
+  height: 550px;
+  width: 500px;
+  background-image: url(../assets/enzo-swan-wDn8sn6jwmA-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+}
+
+/* message us */
+/* .message-us {
+} */
+.font-form {
+  font-size: 20px;
+  margin-left: 18%;
+}
+/* .form-container {
+  display: flex;
+  justify-content: center;
+} */
+
+.name-input {
+  width: 60%;
+  padding: 10px;
+  margin-left: 18%;
+}
+
+.form {
+  width: 100%;
+}
+
+.pesan {
+  width: 60%;
+  padding: 10px;
+  padding-bottom: 110px;
+  margin-left: 18%;
 }
